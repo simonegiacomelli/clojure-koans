@@ -25,8 +25,8 @@
 
   "Iteration can be used for repetition"
   (= (repeat 100 "hello")
-     (take 100 (iterate (fn [x] x) "hello"))))
+     (take 100 (iterate (fn [x] x) "hello")))
 
- "Iteration can be used for repetition - bis"
+  "Iteration can be used for repetition - bis"
   (= (repeat 100 "hello")
      (take 100 (iterate identity "hello"))))
